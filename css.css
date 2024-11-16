@@ -36,7 +36,7 @@ div.AAA{
 	transition: background-color 0.5s;
 	}
 div.AAA:hover{
-	background-color: rgba(230, 230, 230, 1.0);
+	background-color: rgba(230, 230, 230, 0.9);
 }
 div.a{
 	width: 100px;
