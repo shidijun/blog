@@ -3,4 +3,4 @@
 - 一个首页
 - 一个MC服务器宣传
 > 如果你想联系我，可以发送至我的邮箱**ovoshidijunovo@163.com**
-**临时网站：shidijun.github.io/blog**
+- **临时网站：shidijun.github.io/blog**
