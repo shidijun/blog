@@ -11,7 +11,7 @@
 	src: url(/Files/Fonts/Minecraft_LOW.ttf);
 }
 body{
-	background-image:url(./Files/background.png);
+	background-image:url(./Files/Pictures/background.png);
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
