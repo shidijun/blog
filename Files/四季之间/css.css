@@ -123,6 +123,7 @@ div.header {
 		width: 180px;
 		margin: 0 0 0 20px;
 		display: inline;
+		border-radius: 10%;
 		transition:height 0.25s, width 0.25s;
 		}
 	div.header>img.Keli:hover{
