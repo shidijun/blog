@@ -1,14 +1,14 @@
 @font-face{
 	font-family: Minecraft_AE;
-	src: url(../Fonts/Minecraft_AE.ttf);
+	src: url(./Fonts/Minecraft_AE.ttf);
 	}
 @font-face{
 	font-family: Minecrafter_Reg;
-	src: url(../Fonts/Minecrafter_Reg.ttf);
+	src: url(./Fonts/Minecrafter_Reg.ttf);
 }
 @font-face {
 	font-family: Minecraft_LOW;
-	src: url(../Fonts/Minecraft_LOW.ttf);
+	src: url(./Fonts/Minecraft_LOW.ttf);
 }
 p.serif{
 	font-family:"Times New Roman",Times,serif;
