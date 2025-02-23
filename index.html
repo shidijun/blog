@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>史蒂君的小屋</title>
 			<link href="./Files/Images/profile_picture.jpg" rel="shortcut icon">
-			<link rel="stylesheet" type="text/css" href="./Files/css.css">
+			<link rel="stylesheet" type="text/css" href="./Files/style.css">
 		<style>
 body{
 	background-image:url(./Files/Images/background.png);
@@ -12,6 +12,15 @@ body{
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	}
+      /* 600px 以下屏幕设备 */
+    @media only screen and (max-width: 600px) {
+    body {
+        background-image: url(./Files/Images/background_2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
 		</style>
 	</head>
 
@@ -20,18 +29,15 @@ body{
 	
 	<div>
 
-		
-	<div>
-        <div class="topnav">
-            <div class="sdj">
-                <img src="./Files/Images/profile_picture_64.jpg">
-                <b><a class="sdj" href="../../index.html" target="_blank">史蒂君</a></b>
-            </div>
-            <div class="a">
-            <a class="active">主页</a>
-            <a class="common" href="./Files/四季之间/html.html">四季之间</a>
-            <a class="common-right">链接</a>
-            </div>
+    <div class="topnav">
+        <div class="sdj">
+            <img src="./Files/Images/profile_picture_64.jpg">
+            <b><a class="sdj" href="../../index.html" target="_blank">史蒂君</a></b>
+        </div>
+        <div class="a">
+        <a class="active">主页</a>
+        <a class="common" href="./Files/四季之间/html.html">四季之间</a>
+        <a class="common">链接</a>
         </div>
     </div>
 
@@ -43,9 +49,29 @@ body{
 			<div class="main
 			">
 				<div class="Minecraft_AE">
-   				    <p>当上方链接条确定链接后时请告诉作者为链接条添加"active" 属性</p>
-				    <p>以下文本检测"position: sticky"是否顺利工作</p>
-			        <p>你可以尝试将鼠标悬浮或离开此div来尝试其背景色的过渡</p>
+					<b>史蒂君一直专注于四季之间的网页建设无法自拔 这也不知道写啥</b>
+					<b>等着史蒂君征求完意见再来看吧</b><br>
+					<b>当然你可以看看右上角的四季之间</b><br>
+					<p style="text-align: right;">2025.2.23</p>
+					<p></p>
+					<p>下面是凑页面长度的 可以体验置顶按钮</p>
+					<p>114514</p>
+					<p>114514</p>
+					<p>114514</p>
+					<p>114514</p>
+					<p>114514</p>
+					<p>114514</p>
+					<p>114514</p>
+					<p>114514</p>
+					<p>114514</p>
+					<p>114514</p>
+					<p>114514</p>
+					<p>114514</p>
+					<p>114514</p>
+					<p>114514</p>
+					<p>114514</p>
+					<p>114514</p>
+					<p>114514</p>
 					<p>114514</p>
 					<p>114514</p>
 					<p>114514</p>
@@ -95,6 +121,14 @@ body{
             }
         })
 
+        window.addEventListener("scroll", function () {
+		    let topnav = document.querySelector(".topnav");
+        if (window.scrollY > 0) {
+            topnav.classList.add("topnav-change");
+        } else {
+            topnav.classList.remove("topnav-change");
+        }
+        });
 	</script>
 
 
