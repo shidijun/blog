@@ -1,95 +1,135 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>四季之间宣传页|史蒂君的小屋</title>
-	<link href="../Images/profile_picture.jpg" rel="shortcut icon">
-	<link rel="stylesheet" type="text/css" href="../css.css">
+    <link href="../Images/profile_picture.jpg" rel="shortcut icon" />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
     <style>
-body{
-	background-image:url(./Images/4.png);
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-attachment:fixed;
-	}</style>
-</head>
-<body>
-	<div class="zd">&uarr;</div>
+      body {
+        background-image: url(./Images/4.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+      div.main > p {
+        padding: 15px;
+        font-size: 22px;
+        text-indent: 44px;
+        border-left: 10px solid #ccc;
+        border-color: #2195f300;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0);
+        margin: 0;
+        transition: border-color 0.25s, box-shadow 0.25s;
+      }
+      div.main > p:hover {
+        border-color: #2196f3;
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+      }
+      div.server-information {
+        padding: 20px 30px;
+        background-color: rgba(230, 230, 230, 0);
+        border-radius: 15px;
+        transition: background-color 0.5s;
+      }
+      div.server-information:hover {
+        background-color: rgba(230, 230, 230, 0.8);
+      }
+      div.server-information > b {
+        padding: 15px;
+        font-size: 22px;
+        text-indent: 44px;
+      }
+      div.server-information > a {
+        padding: 10px;
+        font-size: 20px;
+      }
+      /* 600px 以下屏幕设备 */
+      @media only screen and (max-width: 600px) {
+        body {
+          background-image: url(./Images/6.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="zd">&uarr;</div>
 
-	<div>
-        <div class="topnav">
-            <div class="sdj">
-                <img src="../Images/profile_picture_64.jpg">
-                <b><a class="sdj" href="../../index.html" target="_blank">史蒂君</a></b>
-            </div>
-            <div class="a">
-            <a class="common" href="../../index.html">主页</a>
-            <a class="active">四季之间</a>
-            <a class="common-right">链接</a>
-            </div>
-        </div>
+    <div class="topnav">
+      <div class="sdj">
+        <img src="../Images/profile_picture_64.jpg" />
+        <b><a class="sdj" href="../../index.html" target="_blank">史蒂君</a></b>
+      </div>
+      <div class="a">
+        <a class="common" href="../../index.html">主页</a>
+        <a class="active">四季之间</a>
+        <a class="common">链接</a>
+      </div>
     </div>
 
     <div class="header">
-			<img class="Keli" src="./Images/title.png">
-		<div class="title">
-			<h1 class="title-1">四季之间</h1>
-			<h1 class="title-2">Mid-Seasons</h1>
-		</div>
-	</div>
+      <img class="Keli" src="./Images/title.png" />
+      <div class="title">
+        <h1 class="title-1">四季之间</h1>
+        <h1 class="title-2">Mid-Seasons</h1>
+      </div>
+    </div>
 
-	<div class="Minecraft_AE">		
-		<div class="main">
-			<h2 align="center">Welcome to this website！</h2>
-			<p>114514</p>
-			<p>114514</p>
-			<p>114514</p>
-			<p>114514</p>
-			<p>114514</p>
-			<p>114514</p>
-			<p>114514</p>
-			<p>114514</p>
-			<p>114514</p>
-			<p>114514</p>
-			<p>114514</p>
-			<p>114514</p>
-			<p>114514</p>
-		</div>
-	</div>
-            <div class="test-header"></div>
-	<script>
-        var zd = document.querySelector(".zd");
-        zd.addEventListener('click',function(){           
-            var time = setInterval(function(){
-                let top = pageYOffset;
-                let step = Math.ceil(top/50);
-                window.scroll(0,top-step);
-                if(top==0){
-                    clearInterval(time);
-                }
-            })
-        },30)
-        window.addEventListener('scroll',function(){                      
-            if(document.documentElement.scrollTop>0){
-            zd.style.right = 5 + 'px';
-            }else{
-                zd.style.right = -55 + 'px';
+    <div class="Minecraft_AE">
+      <div class="main">
+        <h2 align="center">Welcome to this website！</h2>
+        <h2 align="center">这里是MC服务器 四季之间</h2>
+        <p>首先务必声明的是，四季之间：</p>
+        <div class="server-information">
+          <b>版本：1.20.1</b>
+          <b>运作方式：forge</b>
+          <b>离线账号可进！</b>
+          <b>不定时开服</b>
+        </div>
+        <p>我们十分欢迎各位的到来！</p>
+        <p>下面是MOD列表：</p>
+        <div class="server-information">
+          <a href="">zzz</a>
+        </div>
+      </div>
+    </div>
+    <div class="test-header"></div>
+    <script>
+      var zd = document.querySelector(".zd");
+      zd.addEventListener(
+        "click",
+        function () {
+          var time = setInterval(function () {
+            let top = pageYOffset;
+            let step = Math.ceil(top / 50);
+            window.scroll(0, top - step);
+            if (top == 0) {
+              clearInterval(time);
             }
-        })
+          });
+        },
+        30
+      );
+      window.addEventListener("scroll", function () {
+        if (document.documentElement.scrollTop > 0) {
+          zd.style.right = 5 + "px";
+        } else {
+          zd.style.right = -55 + "px";
+        }
+      });
 
-
-
-window.addEventListener('scroll',function(){
-            let topnav = document.querySelector('.topnav');
-        if(window.scrollY>0)
-            {
-                topnav.classList.add("topnav-change");
-            }else{
-                topnav.classList.remove("topnav-change");
-            }
-        })
-
-	</script>
-</body>
+      window.addEventListener("scroll", function () {
+        let topnav = document.querySelector(".topnav");
+        if (window.scrollY > 0) {
+          topnav.classList.add("topnav-change");
+        } else {
+          topnav.classList.remove("topnav-change");
+        }
+      });
+    </script>
+  </body>
 </html>
