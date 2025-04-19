@@ -68,7 +68,7 @@ div.topnav-change{
 
 	/* 聚焦导航条改变common的字体颜色 */
 	div.topnav:hover .a>.common{
-		color: #d5f575;
+		color: #6effbb;
 	}
 	a.sdj{
 	color:#000000;
