@@ -12,6 +12,46 @@ body{
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	}
+
+div.main_2{
+	background-color: rgba(230, 230, 230, 0.5);
+	width: 480px;
+	margin: 10px auto 10px auto;
+	padding: 10px;
+	border-radius: 10px;
+	transition: 0.5s;	
+	display: flex;
+	}
+div.main_2:hover{
+	background-color: rgba(230, 230, 230, 0.7);
+	box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+div.main_2>img{
+	height: 150px;
+	width: 150px;
+	border-radius: 10px;
+	transition: 0.5s;
+}
+div.main_2:hover img{
+	height: 160px;
+	width: 160px;
+}
+div.main_2>div{
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+div.main_2>div>div>b{
+	font-size: 20px;
+}
+div.main_2>div p{
+	margin: 10px;
+	text-align: center;
+}
+
+
       /* 600px 以下屏幕设备 */
     @media only screen and (max-width: 600px) {
     body {
@@ -32,7 +72,7 @@ body{
     <div class="topnav">
         <div class="sdj">
             <img src="./Files/Images/profile_picture_64.jpg">
-            <b><a class="sdj" href="../../index.html" target="_blank">史蒂君</a></b>
+            <b><a class="sdj" href="https://space.bilibili.com/1572630582" target="_blank">史蒂君</a></b>
         </div>
         <div class="a">
         <a class="active">主页</a>
@@ -45,9 +85,26 @@ body{
 		<div class="header">
 			<h1>史蒂君的小屋</h1>
 		</div>
-
-			<div class="main
-			">
+			<div class="main">
+				
+		<a href="./Files/KARDS/html.html" target="_blank">
+			<div class="main_2">
+				<img src="./Files/KARDS/images/KARDS.png" alt="KARDS">
+				<div>
+					<div>
+						<b>
+							<p>KARDS</br>萌新手册</p>
+						</b>
+					</div>
+					<div>
+						<p style="color: rgb(92, 92, 92);">由耳廓狐耗时两天半亲笔写下的</br>致以萌新的小建议</p>
+					</div>
+				</div>
+				<div class="zzz">
+					<h1 style="color: black;">站长</br>推荐</h1>
+				</div>
+			</div>
+		</a>
 				<div class="Minecraft_AE">
 					<b>史蒂君一直专注于四季之间的网页建设无法自拔 这也不知道写啥</b>
 					<b>等着史蒂君征求完意见再来看吧</b><br>
